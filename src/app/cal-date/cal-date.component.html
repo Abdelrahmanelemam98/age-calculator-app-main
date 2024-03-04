@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <div class="inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-12">
+            <div class="input-group">
+              <div class="input-label">
+                <h6>Day</h6>
+                <input type="text" [(ngModel)]="day" />
+              </div>
+              <div class="input-label">
+                <h6>Month</h6>
+                <input type="text" [(ngModel)]="month" />
+              </div>
+              <div class="input-label">
+                <h6>Years</h6>
+                <input type="text" [(ngModel)]="year" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="submit-btn">
+              <hr />
+              <img
+                src="../../assets/img/icon-arrow.svg"
+                style="background-color: black"
+                alt=""
+                (click)="submit()"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="result-section">
+              <div *ngIf="age">
+                <h2>{{ age.years }} <span>years</span></h2>
+                <h2>{{ age.days }} <span>days</span></h2>
+                <h2>{{ age.hours }} <span>hours</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
